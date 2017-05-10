@@ -1,31 +1,13 @@
 <?php get_header(); ?>
 
-
-
 <section class="text-columns">
 	<div class="container">
 		<div class="column">
-			<?php  
-			$sql = "SELECT * FROM textarea_left ORDER BY id DESC";
-			$result = mysqli_query($conn, $sql);
-
-			while($row = mysqli_fetch_assoc($result)) {
-				echo "<h2>".$row['title']."</h2><br>";
-				echo "<p>".$row['content']."</p><br>";
-			}
-			?>
+			<?php echo get_field('left_content') ?>
 		</div>
 
 		<div class="column">
-			<?php  
-			$sql = "SELECT * FROM textarea_right ORDER BY id DESC";
-			$result = mysqli_query($conn, $sql);
-
-			while($row = mysqli_fetch_assoc($result)) {
-				echo "<h2>".$row['title']."</h2><br>";
-				echo "<p>".$row['content']."</p><br>";
-			}
-			?>
+			<?php echo get_field('right_content') ?>
 		</div>
 	</div> <!-- end container -->
 </section> <!-- end Text-columns -->
