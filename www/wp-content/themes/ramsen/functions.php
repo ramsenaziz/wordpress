@@ -28,3 +28,29 @@ function ramsen_register_menus() {
 
 }
 add_action( 'init', 'ramsen_register_menus' );
+
+/**
+ * Add settings to the Customizer API.
+ */
+function ramsen_customize_register($wp_customize) {
+
+	$wp_customize->add_section('ramsen_misc_settings', array(
+        'title'    => __('Misc settings', 'ramsen'),
+        'priority' => 120,
+	));
+
+    $wp_customize->add_setting('contact_page', array(
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+ 
+    ));
+	 
+    $wp_customize->add_control('ramsen_page_contact', array(
+        'label'      => 'Contact page',
+        'section'    => 'ramsen_misc_settings',
+        'type'    => 'dropdown-pages',
+        'settings'   => 'contact_page',
+    ));
+
+}
+add_action( 'customize_register', 'ramsen_customize_register' );

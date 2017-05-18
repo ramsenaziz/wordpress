@@ -13,36 +13,26 @@
 	<div class="site-wrapper container">
 		<header class="site-header">
 			<div class="container">
-				<a href="?nav=start" class="logo">
+				<a href="<?php echo get_home_url() ?>" class="logo">
 					<span>R</span>
 				</a>
 				
-				<?php
-					wp_nav_menu( [
-						'menu' => 'Main navigation',
-						'menu_class' => 'site-nav',
-					] );
-				?> 
-				<button id="toggle-nav"><span>Meny</span></button>
 				<nav class="site-nav">
-					<ul>
-						<li><a href="?nav=start">Hem</a></li>
-						<li><a href="?nav=portfolio">Portfolio</a></li>
-						<li><a href="?nav=cv">CV</a></li>
-						<li><a href="?nav=kontakt">Kontakt</a></li>
-					</ul>
+					<?php
+						wp_nav_menu( [
+							'menu' => 'Main navigation',
+							'menu_class' => 'site-nav',
+						] );
+					?> 
+					<button id="toggle-nav"><span>Meny</span></button>
 				</nav> <!-- end site-nav -->
-				<div class='login-form'>
-				<?php echo "
-						<form method='post' action='admin/index.php'>
-							<input class='input-password' type='password' name='password' placeholder='Lösenord'>
-							<button class='login-button' type='submit'>Logga in</button>
-						</form>"
-					;?>
-			</div>
 			</div> <!-- end container -->
 		</header> <!-- end site-header -->
 
 		<section class="page-header">
-			<h1><?php the_title() ?></h1>
+			<?php if ($title = get_field('page_title')): ?>
+				<h1><?php echo $title ?></h1>
+			<?php else: ?>
+				<h1><?php the_title() ?></h1>
+			<?php endif ?>
 		</section> <!-- end page-header -->

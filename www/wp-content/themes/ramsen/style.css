@@ -191,8 +191,7 @@ table {
 }
 
 .site-header .site-nav {
-    float: left;
-    margin-left: 200px;
+    float: right;
     margin-top: 1px;
 }		
 
@@ -503,8 +502,12 @@ table {
 
 .contact-form label {
 	display: block;
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	font-family: 'Bungee', cursive;
+}
+
+.contact-form label input, .contact-form label textarea {
+	margin-top: 1em;
 }
 
 .contact-form input[type="text"],
@@ -571,15 +574,12 @@ table {
 	background: #fbfbfb;
 }
 
-.accordion li .accordion-content div {
-	margin-bottom: 50px;
-}
-
-.accordion li .accordion-content div:last-child {
-	margin-bottom: 0;
+.accordion li .accordion-content h3:first-child {
+	margin-top: 0px;
 }
 
 .accordion li .accordion-content h3 {
+	margin-top: 50px;
 	margin-bottom: 15px;
 	font-size: 1.5rem;
 	font-weight: bold;
