@@ -46,7 +46,7 @@ jQuery(document).mouseup(function(event) {
  * ==============
  */
 function initCountDown () {
-	jQuery(".countdown.lia time").countdown("2018/01/15", function(event) {
+	jQuery(".countdown.lia time").countdown("2017/11/03", function(event) {
 		var $this = jQuery(this).html(event.strftime(''
 		    + '<span>%D</span> dagar<br> '
 		    + '<span>%H:</span>'

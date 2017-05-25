@@ -32,6 +32,10 @@
 		<section class="page-header">
 			<?php if ($title = get_field('page_title')): ?>
 				<h1><?php echo $title ?></h1>
+			<?php elseif (is_home()): ?>
+				<h1>Blogg</h1>
+			<?php elseif (is_singular()): ?>
+				<h1><?php the_title() ?></h1>
 			<?php else: ?>
 				<h1><?php the_title() ?></h1>
 			<?php endif ?>

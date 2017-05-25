@@ -29,7 +29,7 @@
 <section class="contact-section">
 	<div class="container">
 		<h4>Vill du komma i kontakt med mig?</h4>
-		<a href="<?php echo get_field('link_to_contact') ?>" class="button button-big">Kontakta mig</a>
+		<a href="<?php echo get_permalink(get_option('contact_page')) ?>" class="button button-big">Kontakta mig</a>
 	</div> <!-- end container -->
 </section> <!-- end contact-section -->
 

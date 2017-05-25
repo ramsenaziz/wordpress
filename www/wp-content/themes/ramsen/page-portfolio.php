@@ -1,24 +1,10 @@
-<?php  /* Template Name: CV */?>
+<?php  /* Template Name: Portfolio */?>
 
 <?php get_header(); ?>
 
-<?php $sections = get_field('sections'); ?>
-
-<section class="cv-section">
+<section class="portfolio-items">
 	<div class="container">
-		<ul class="accordion">
-			<?php foreach ($sections as $section): ?>
-				<li>
-					<span class="accordion-title">
-						<?php echo $section['title'] ?>
-					</span>
-
-					<div class="accordion-content">
-						<?php echo $section['content'] ?>
-					</div>
-				</li>
-			<?php endforeach ?>			
-		</ul>
+	
 	</div> <!-- end container -->
 </section> <!-- end countdown-section -->
 
