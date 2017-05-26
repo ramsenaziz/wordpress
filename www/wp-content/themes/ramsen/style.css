@@ -165,11 +165,6 @@ table {
  * Site-header
  * ==============
  */
- .site-header .login-form {
- 	margin-top: 10px;
- 	margin-left: 10px;
- 	float: right;
- }
 
  .site-header .container {
  	overflow: hidden;
@@ -239,51 +234,6 @@ table {
     position: absolute;
     top: 7px;
     left: 3px;
-}
-
-.input-password {
- 	display: inline-block;
-	padding: 5px 10px;
-	border: none;
-	background: #f9e100;
-	color: black;
-	box-sizing: border-box;
-	box-shadow: 3px 6px 0 #e0d143, 0px 0px 9px rgba(0, 0, 0, 0.08);
-	font-size: 0.7em;
-	outline: none;
-}
-
-.login-button {
-    padding: 6px 10px;
-    font-weight: normal;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .1em;
-    background: #191919;
-    color: white;
-    border: none;
-    font-family: 'Bungee', cursive;
-    cursor: pointer;
-    box-shadow: 3px 2px 0 #e0d143, 0px 0px 9px rgba(0, 0, 0, 0.08);
-    transition: background 100ms;
-    line-height: 1.7;
-}
-
-.logout-button {
-	padding: 10px 25px;
-	font-weight: normal;
-	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: .1em;
-	background: #191919;
-	color: white;
-	border: none;
-	font-size: 0.6em;
-	font-family: 'Bungee', cursive;
-	cursor: pointer;
-	box-shadow: 3px 6px 0 #e0d143;
-	transition: background 100ms;
-	line-height: 1.5;
 }
 
 
@@ -710,9 +660,6 @@ table {
  * ==============
  */
 @media (max-width: 1176px) {
-	.site-header .login-form {
-		float: right;
-	}
 
 	.site-nav {
 		float: none: ;
@@ -852,16 +799,6 @@ table {
 	}
 }
 
-@media (max-width: 502px) {
-	.site-header .logo {
-		display: none;
-	}
-
-	.site-header .login-form {
-		float: left;
-	}
-}
-
 @media (max-width: 469px) {
 	.button-big {
 		font-size: 1.5em;
@@ -876,15 +813,6 @@ table {
 @media (max-width: 435px) {
 	.button-big {
 		font-size: 1.0em;
-	}
-	
-	.site-header .login-form {
-		float: left;
-		font-size: 0.7em;
-	}
-
-	.site-header .login-form .login-button {
-		font-size: 0.8em;
 	}
 
 	.site-header #toggle-nav {
@@ -913,15 +841,7 @@ table {
 	}
 }
 
-@media (max-width: 376px) {
-	.site-header .login-form {
-		float: left;
-		font-size: 0.5em;
-	}
-	.site-header .login-form .login-button {
-		font-size: 0.6em;
-	}
-}
+
 
 @media (max-width: 357px) {
 	.accordion .accordion-title {
@@ -938,20 +858,6 @@ table {
 @media (max-width: 336px) {
 	.contacts-table {
 		font-size: .2em;
-	}
-}
-
-@media (max-width: 315px) {
-.site-header .login-form {
-    float: left;
-    font-size: 0.4em;
-	}
-}
-
-@media (max-width: 290px) {
-.site-header .login-form {
-    float: left;
-    font-size: 0.3em;
 	}
 }
 

@@ -17,6 +17,8 @@
 					<span>R</span>
 				</a>
 				
+				<button id="toggle-nav"><span>Meny</span></button>
+
 				<nav class="site-nav">
 					<?php
 						wp_nav_menu( [
@@ -24,7 +26,6 @@
 							'menu_class' => 'site-nav',
 						] );
 					?> 
-					<button id="toggle-nav"><span>Meny</span></button>
 				</nav> <!-- end site-nav -->
 			</div> <!-- end container -->
 		</header> <!-- end site-header -->
